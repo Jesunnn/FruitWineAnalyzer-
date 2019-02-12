@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/purple">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/purple"
+        android:textColor="#FFFFFF"
+        android:text="History"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:background="@drawable/purple"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.baoyz.swipemenulistview.SwipeMenuListView>
+
+</RelativeLayout>

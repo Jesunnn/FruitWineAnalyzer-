@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/purple"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity ="center"
+        android:fillViewport="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="0dp"
+        android:id="@+id/scrollView">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/abt"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:textSize="27dp"
+        android:text="About The Project" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/abt"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="DESIGN OF A TROPICAL FRUIT WINE ANALYZER USING SUPERVISED MACHINE LEARNING "
+        android:textSize="19dp" />
+
+    <ImageView
+        android:id="@+id/hd"
+        android:layout_width="wrap_content"
+        android:layout_height="242dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/name"
+        app:srcCompat="@drawable/hd" />
+
+        <TextView
+            android:id="@+id/spc"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/hd"/>
+
+    <TextView
+        android:id="@+id/dtls"
+        android:layout_width="fill_parent"
+        android:layout_height="240dp"
+        android:layout_alignParentStart="true"
+        android:gravity="clip_horizontal"
+        android:layout_below="@+id/spc"
+        android:textSize="17dp"
+        android:textColor="#FFFFFF"
+        android:text="      The project is consisting of both hardware and software. For the hardware part, the prototype can get and record the values from different parameters such as alcohol level, temperature level, pH level, and volatile acidity level while on the software part, it consists of an algorithm that can classify the wine according to its respective class based on the measured values that get on different sensors and display its results on a mobile application" />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

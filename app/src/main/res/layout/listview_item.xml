@@ -1,0 +1,227 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingStart="5dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:layout_margin="30dp"
+    android:background="#FFFFFF">
+
+
+    <TextView
+        android:id="@+id/transactionidlabel"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Trial :"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/transactionid"
+        android:layout_toEndOf="@+id/transactionidlabel"
+        android:layout_marginStart="10dp"
+        android:textAlignment="textEnd"
+        android:text="1"
+        android:textColor="#000000"
+        android:textSize="15dp"/>
+    <TextView
+        android:id="@+id/transID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/transactionid"
+        android:layout_marginStart="2dp"
+        android:layout_alignTop="@+id/transactionid"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/phLabel"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/transactionidlabel"
+        android:layout_marginStart="10dp"
+        android:text="pH :"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/ph"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/phLabel"
+        android:layout_marginStart="10dp"
+        android:layout_alignTop="@+id/phLabel"
+        android:textAlignment="textEnd"
+        android:text="ph "
+        android:textColor="#000000"
+        android:textSize="15dp"/>
+    <TextView
+        android:id="@+id/phUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/ph"
+        android:layout_marginStart="2dp"
+        android:layout_alignTop="@+id/ph"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="15dp"/>
+
+
+    <TextView
+        android:id="@+id/alcoholLabel"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phLabel"
+        android:layout_marginStart="10dp"
+        android:text="Alcohol Content:"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/alcohol"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/alcoholLabel"
+        android:layout_marginStart="10dp"
+        android:layout_alignTop="@+id/alcoholLabel"
+        android:textAlignment="textEnd"
+        android:text="alcohol"
+        android:textColor="#000000"
+        android:textSize="15dp"/>
+    <TextView
+        android:id="@+id/alcoholUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/alcohol"
+        android:layout_marginStart="2dp"
+        android:layout_alignTop="@+id/alcohol"
+        android:text="%"
+        android:textColor="#000000"
+        android:textSize="15dp"/>
+
+
+    <TextView
+        android:id="@+id/tempLabel"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alcoholLabel"
+        android:layout_marginStart="10dp"
+        android:text="Temperature :"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/temps"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/tempLabel"
+        android:layout_marginStart="10dp"
+        android:layout_alignTop="@+id/tempLabel"
+        android:textAlignment="textEnd"
+        android:text="temperature"
+        android:textColor="#000000"
+        android:textSize="15dp"/>
+    <TextView
+        android:id="@+id/tempUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/temps"
+        android:layout_marginStart="2dp"
+        android:layout_alignTop="@+id/temps"
+        android:text="°C"
+        android:textColor="#000000"
+        android:textSize="15dp"/>
+
+
+    <TextView
+        android:id="@+id/vaLabel"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tempLabel"
+        android:layout_marginStart="10dp"
+        android:text="Volatile Acidity:"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/va"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/vaLabel"
+        android:layout_marginStart="10dp"
+        android:layout_alignTop="@+id/vaLabel"
+        android:textAlignment="textEnd"
+        android:text="volatile"
+        android:textColor="#000000"
+        android:textSize="15dp"/>
+    <TextView
+        android:id="@+id/vaUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/va"
+        android:layout_marginStart="2dp"
+        android:layout_alignTop="@+id/va"
+        android:text="ppm"
+        android:textColor="#000000"
+        android:textSize="15dp"/>
+
+
+    <TextView
+        android:id="@+id/uploadedlabel"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/vaLabel"
+        android:text="Date and Time :"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/uploaded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/uploadedlabel"
+        android:layout_marginStart="10dp"
+        android:layout_alignTop="@+id/uploadedlabel"
+        android:text="2019-01-28 - 1:24:12"
+        android:textColor="#000000"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/ratingLabel"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uploadedlabel"
+        android:layout_marginStart="10dp"
+        android:text="Rating: "
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/ratingLabel"
+        android:layout_marginStart="10dp"
+        android:layout_alignTop="@+id/ratingLabel"
+        android:textAlignment="textEnd"
+        android:text="Good"
+        android:textColor="#000000"
+        android:textSize="15dp"/>
+    <TextView
+        android:id="@+id/ratingUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/rating"
+        android:layout_marginStart="2dp"
+        android:layout_alignTop="@+id/rating"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="15dp"/>
+
+</RelativeLayout>
