@@ -139,34 +139,34 @@
 
 
     <TextView
-        android:id="@+id/vaLabel"
+        android:id="@+id/ssLabel"
         android:layout_width="114dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tempLabel"
         android:layout_marginStart="10dp"
-        android:text="Volatile Acidity:"
+        android:text="Soluble Solid:"
         android:textColor="#000000"
         android:textSize="15dp"
         android:textStyle="bold"/>
     <TextView
-        android:id="@+id/va"
+        android:id="@+id/ss"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_toEndOf="@+id/vaLabel"
+        android:layout_toEndOf="@+id/ssLabel"
         android:layout_marginStart="10dp"
-        android:layout_alignTop="@+id/vaLabel"
+        android:layout_alignTop="@+id/ssLabel"
         android:textAlignment="textEnd"
-        android:text="volatile"
+        android:text="soluble"
         android:textColor="#000000"
         android:textSize="15dp"/>
     <TextView
-        android:id="@+id/vaUnit"
+        android:id="@+id/ssUnit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_toEndOf="@+id/va"
+        android:layout_toEndOf="@+id/ss"
         android:layout_marginStart="2dp"
-        android:layout_alignTop="@+id/va"
-        android:text="ppm"
+        android:layout_alignTop="@+id/ss"
+        android:text="°Brix"
         android:textColor="#000000"
         android:textSize="15dp"/>
 
@@ -176,7 +176,7 @@
         android:layout_width="114dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_below="@+id/vaLabel"
+        android:layout_below="@+id/ssLabel"
         android:text="Date and Time :"
         android:textSize="15dp"
         android:textColor="#000000"

@@ -38,7 +38,7 @@ public class history extends AppCompatActivity {
     private String ph;
     private String alcohol_content;
     private String temperature;
-    private String volatile_acid;
+    private String soluble_solid;
     private static ProgressDialog mProgressDialog;
     private String Result;
     ArrayList<HashMap<String, String>> arraylist;
@@ -50,8 +50,9 @@ public class history extends AppCompatActivity {
     static String PH = "pH";
     static String ALCOHOL = "AlcoholContent";
     static String TEMPERATURE = "Temperature";
-    static String VOLATILE = "VolatileAcid";
+    static String SOLUBLE = "SolubleSolid";
     static String UPLOADED = "Uploaded";
+    static String RATING = "Rating";
 
 
 
@@ -122,7 +123,7 @@ public class history extends AppCompatActivity {
                             map.put("pH", jsonObject.getString("ph"));
                             map.put("AlcoholContent", jsonObject.getString("alcohol_content"));
                             map.put("Temperature", jsonObject.getString("temperature"));
-                            map.put("VolatileAcid", jsonObject.getString("volatile_acid"));
+                            map.put("SolubleSolid", jsonObject.getString("soluble_solid"));
                             map.put("Uploaded", jsonObject.getString("uploaded"));
                             map.put("Rating", jsonObject.getString("rating"));
                             arraylist.add(map);

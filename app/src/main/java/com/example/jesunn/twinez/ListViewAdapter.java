@@ -76,6 +76,7 @@ public class ListViewAdapter extends BaseAdapter {
         TextView temp;
         TextView va;
         TextView uploaded;
+        TextView rating;
         inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View itemView = inflater.inflate(R.layout.listview_item, parent, false);
         resultp = data.get(position);
@@ -87,8 +88,9 @@ public class ListViewAdapter extends BaseAdapter {
         ph = itemView.findViewById(R.id.ph);
         ac = itemView.findViewById(R.id.alcohol);
         temp = itemView.findViewById(R.id.temps);
-        va = itemView.findViewById(R.id.va);
+        va = itemView.findViewById(R.id.ss);
         uploaded = itemView.findViewById(R.id.uploaded);
+        rating = itemView.findViewById(R.id.rating);
 
         /*
         Capture the position and set the text to text view
@@ -98,15 +100,17 @@ public class ListViewAdapter extends BaseAdapter {
         ph.setText(resultp.get(history.PH));
         ac.setText(resultp.get(history.ALCOHOL));
         temp.setText(resultp.get(history.TEMPERATURE));
-        va.setText(resultp.get(history.VOLATILE));
+        va.setText(resultp.get(history.SOLUBLE));
         uploaded.setText(resultp.get(history.UPLOADED));
+        rating.setText(resultp.get(history.RATING));
 
         System.out.println(resultp.get(history.TRANSACTIONID));
         System.out.println(resultp.get(history.PH));
         System.out.println(resultp.get(history.ALCOHOL));
         System.out.println(resultp.get(history.TEMPERATURE));
-        System.out.println(resultp.get(history.VOLATILE));
+        System.out.println(resultp.get(history.SOLUBLE));
         System.out.println(resultp.get(history.UPLOADED));
+        System.out.println(resultp.get(history.RATING));
 
                 /*
         Create swipe menu instance
@@ -144,10 +148,11 @@ public class ListViewAdapter extends BaseAdapter {
                          */
                         Intent single_intent = new Intent(context, SingleItemView.class);
                         single_intent.putExtra("ph", resultp.get(history.PH));
-                        single_intent.putExtra("volatile", resultp.get(history.VOLATILE));
+                        single_intent.putExtra("soluble", resultp.get(history.SOLUBLE));
                         single_intent.putExtra("transactionid", resultp.get(history.TRANSACTIONID));
                         single_intent.putExtra("alcohol", resultp.get(history.ALCOHOL));
                         single_intent.putExtra("temperature", resultp.get(history.TEMPERATURE));
+                        single_intent.putExtra("rating", resultp.get(history.RATING));
                         context.startActivity(single_intent);
 
                         break;

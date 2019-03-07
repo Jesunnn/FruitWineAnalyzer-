@@ -46,12 +46,12 @@
         android:textSize="19dp" />
 
     <ImageView
-        android:id="@+id/hd"
+        android:id="@+id/hds"
         android:layout_width="wrap_content"
         android:layout_height="242dp"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/name"
-        app:srcCompat="@drawable/hd" />
+        app:srcCompat="@drawable/hds" />
 
         <TextView
             android:id="@+id/spc"
@@ -68,7 +68,7 @@
         android:layout_below="@+id/spc"
         android:textSize="17dp"
         android:textColor="#FFFFFF"
-        android:text="      The project is consisting of both hardware and software. For the hardware part, the prototype can get and record the values from different parameters such as alcohol level, temperature level, pH level, and volatile acidity level while on the software part, it consists of an algorithm that can classify the wine according to its respective class based on the measured values that get on different sensors and display its results on a mobile application" />
+        android:text="      The project is consisting of both hardware and software. For the hardware part, the prototype can get and record the values from different parameters such as alcohol level, temperature level, pH level, and total soluble solid while on the software part, it consists of an algorithm that can classify the wine according to its respective class based on the measured values that get on different sensors and display its results on a mobile application" />
     </LinearLayout>
 </ScrollView>
 </LinearLayout>

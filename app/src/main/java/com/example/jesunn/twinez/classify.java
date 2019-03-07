@@ -33,7 +33,7 @@ public class classify extends AppCompatActivity {
     private String ph;
     private String alcohol_content;
     private String temperature;
-    private String volatile_acid;
+    private String soluble_solid;
     private String rate;
     private static ProgressDialog mProgressDialog;
     private String Result;
@@ -116,19 +116,19 @@ public class classify extends AppCompatActivity {
                         String json_ph = jsonObject.getString("ph").trim();
                         String json_alcohol_content = jsonObject.getString("alcohol_content").trim();
                         String json_object_temperature = jsonObject.getString("temperature").trim();
-                        String json_volatile_acid = jsonObject.getString("volatile_acid").trim();
+                        String json_soluble_solid = jsonObject.getString("soluble_solid").trim();
                         String json_rate = jsonObject.getString("rating").trim();
 
 
                         ph = json_ph;
                         alcohol_content = json_alcohol_content;
                         temperature = json_object_temperature;
-                        volatile_acid = json_volatile_acid;
+                        soluble_solid = json_soluble_solid;
                         rate = json_rate;
 
 
                         Result = "PH: \t\t" + json_ph + "\nAlcohol Content: \t\t" + json_alcohol_content + "\t%" + "\nTemperature: \t\t" + json_object_temperature + "\t°C" + "\n" +
-                                    "Volatile Acid: \t\t" + json_volatile_acid + "\tppm" + "\n\n" + "\n\nRating: \t\t" + json_rate + "\n";
+                                    "Soluble Solid: \t\t" + json_soluble_solid + "\t°Brix" + "\n\n" + "\n\nRating: \t\t" + json_rate + "\n";
                         System.out.println(Result);
                     }
 

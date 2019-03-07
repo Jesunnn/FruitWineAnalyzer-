@@ -8,19 +8,6 @@
     android:background="@drawable/purple"
     android:id="@+id/relativeLayout">
 
-
-    <TextView
-        android:id="@+id/displayResult"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"
-        android:background="#FFFFFF"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        />
-
     <Button
         android:id="@+id/get"
         android:layout_width="200dp"
@@ -30,9 +17,7 @@
         android:layout_marginBottom="119dp"
         android:text="Analyze"
         android:textStyle="bold"
-        android:textSize="20dp"
-        />
-
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/results"
@@ -41,4 +26,143 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:background="@drawable/purple" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="270dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="#FFFFFF"
+        android:paddingBottom="15dp"
+        android:paddingStart="5dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/transactionidlabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:text="STANDARD VALUES"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/spc"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000"
+            android:layout_below="@+id/transactionidlabel"
+            android:textStyle="bold"/>
+
+
+
+        <TextView
+            android:id="@+id/phLabel"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spc"
+            android:layout_marginStart="10dp"
+            android:text="pH :"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ph"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/phLabel"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/phLabel"
+            android:text="  3.5 - 4.5 "
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/alcoholLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phLabel"
+            android:layout_marginStart="10dp"
+            android:text="Alcohol Content:"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/alcohol"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/alcoholLabel"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/alcoholLabel"
+            android:text="  10 - 14 %"
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/tempLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alcoholLabel"
+            android:layout_marginStart="10dp"
+            android:text="Temperature :"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/temps"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tempLabel"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/tempLabel"
+            android:text="  20 °C"
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/ssLabel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tempLabel"
+            android:layout_marginStart="10dp"
+            android:text="Soluble Solid:"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ss"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ssLabel"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/ssLabel"
+            android:text="  8 - 24 °Brix"
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+
+
+
+    </RelativeLayout>
+
 </RelativeLayout>
